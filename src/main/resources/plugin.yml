@@ -1,0 +1,6 @@
+name: Anti Gamemode
+version: '${project.version}'
+main: dev.sancraft.antigamemode.main
+api-version: 1.14
+authors: [ DavidCraft ]
+website: sancraft.dev
