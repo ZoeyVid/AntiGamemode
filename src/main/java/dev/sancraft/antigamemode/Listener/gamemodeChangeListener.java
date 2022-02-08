@@ -14,12 +14,14 @@ public class gamemodeChangeListener implements Listener {
     @EventHandler
     public void onGamemodeChange(PlayerGameModeChangeEvent event) {
         if(!event.getNewGameMode().equals(GameMode.SURVIVAL)) {
-            if (!event.getPlayer().isOp()) event.setCancelled(true);
-            for (Player player : Bukkit.getServer().getOnlinePlayers()) {
+            if (!event.getPlayer().isOp()) {
+             event.setCancelled(true);
+             for (Player player : Bukkit.getServer().getOnlinePlayers()) {
                 if (player.isOp()) {
                     player.sendMessage(ChatColor.DARK_RED + "Es wurde versucht den Spieler " + event.getPlayer().getName() + " in einen anderen Gamemode zu wechselen!");
                 }
             }
+}
         }
     }
 }
