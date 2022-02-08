@@ -51,6 +51,7 @@
                 <filtering>true</filtering>
             </resource>
         </resources>
+        <finalName>AntiGamemode</finalName>
     </build>
 
     <repositories>
