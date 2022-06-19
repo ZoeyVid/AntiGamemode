@@ -33,7 +33,7 @@ jobs:
       with:
         name: artifacts
         path: |
-          target/ram.jar
+          target/AntiGamemode.jar
 
     - uses: "marvinpinto/action-automatic-releases@latest"
       if: github.event_name != 'pull_request'
@@ -43,4 +43,4 @@ jobs:
         title: ${{ steps.version.outputs.version }}
         automatic_release_tag: ${{ steps.version.outputs.version }}
         files: |
-          target/ram.jar
+          target/AntiGamemode.jar
