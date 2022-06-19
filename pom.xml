@@ -6,7 +6,7 @@
 
     <groupId>dev.sancraft</groupId>
     <artifactId>anti-gamemode</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.0.0</version>
     <packaging>jar</packaging>
 
     <name>Anti Gamemode</name>
@@ -57,19 +57,19 @@
     <repositories>
         <repository>
             <id>papermc-repo</id>
-            <url>https://papermc.io/repo/repository/maven-public/</url>
+            <url>https://repo.papermc.io/repository/maven-public</url>
         </repository>
         <repository>
             <id>sonatype</id>
-            <url>https://oss.sonatype.org/content/groups/public/</url>
+            <url>https://oss.sonatype.org/content/groups/public</url>
         </repository>
     </repositories>
 
     <dependencies>
         <dependency>
-            <groupId>com.destroystokyo.paper</groupId>
+            <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.14.4-R0.1-SNAPSHOT</version>
+            <version>1.19-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
