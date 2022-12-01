@@ -1,6 +1,6 @@
-package dev.sancraft.antigamemode;
+package de.zoeyvid.antigamemode;
 
-import dev.sancraft.antigamemode.Listener.gamemodeChangeListener;
+import de.zoeyvid.antigamemode.Listener.gamemodeChangeListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;

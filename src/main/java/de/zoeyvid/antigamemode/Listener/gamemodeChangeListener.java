@@ -1,4 +1,4 @@
-package dev.sancraft.antigamemode.Listener;
+package de.zoeyvid.antigamemode.Listener;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
