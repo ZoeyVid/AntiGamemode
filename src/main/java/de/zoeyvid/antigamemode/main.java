@@ -9,13 +9,13 @@ public final class main extends JavaPlugin {
 
   @Override
   public void onEnable() {
-    Bukkit.getConsoleSender().sendMessage("§aAntiGamemode by Sancraft is now enabled!");
+    Bukkit.getConsoleSender().sendMessage("§aAntiGamemode by ZoeyVid is now enabled!");
     PluginManager pluginManager = Bukkit.getPluginManager();
     pluginManager.registerEvents(new gamemodeChangeListener(), this);
   }
 
   @Override
   public void onDisable() {
-    Bukkit.getConsoleSender().sendMessage("§cAntiGamemode by Sancraft is now disabled!");
+    Bukkit.getConsoleSender().sendMessage("§cAntiGamemode by ZoeyVid is now disabled!");
   }
 }
