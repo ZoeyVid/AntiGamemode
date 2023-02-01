@@ -1,6 +1,6 @@
 name: Anti-Gamemode
 version: '${project.version}'
 main: de.zoeyvid.antigamemode.main
-api-version: 1.14
-authors: [ DavidCraft ]
+api-version: 1.19
+authors: [ DavidCraftDev ]
 website: zoeyvid.de
