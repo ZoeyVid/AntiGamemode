@@ -23,8 +23,7 @@ jobs:
 
     - name: Build with Maven
       run: | 
-       sed -i 's/0.0.0/${{ steps.version.outputs.version }}/g' pom.xml
-       grep pom.xml -e ${{ steps.version.outputs.version }}
+       sed -i "s|0.0.0|"$(cat .github/.version)"|g" pom.xml
        mvn -B package --file pom.xml
        rm -rf target/original-*.jar
 
