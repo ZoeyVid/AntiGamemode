@@ -4,3 +4,4 @@ main: de.zoeyvid.antigamemode.main
 api-version: 1.19
 authors: [ DavidCraftDev ]
 website: zoeyvid.de
+folia-supported: true
