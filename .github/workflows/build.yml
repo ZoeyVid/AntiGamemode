@@ -26,12 +26,27 @@ jobs:
           name: artifacts
           path: |
             target/AntiGamemode.jar
-      - uses: "marvinpinto/action-automatic-releases@latest"
-        if: github.event_name != 'pull_request'
+      - uses: Kir-Antipov/mc-publish@v3.2
         with:
-          prerelease: false
-          repo_token: ${{ github.token }}
-          title: v${{ steps.version.outputs.version }}
-          automatic_release_tag: v${{ steps.version.outputs.version }}
-          files: |
-            target/AntiGamemode.jar
+          version-type: release
+          github-prerelease: false
+          name: v${{ steps.version.outputs.version }}
+          version: ${{ steps.version.outputs.version }}
+          github-tag: v${{ steps.version.outputs.version }}
+          files-primary: target/AntiGamemode.jar
+          java: |
+            17
+          loaders: |
+            paper
+            purpur
+          game-versions: |
+            1.19
+            1.19.1
+            1.19.2
+            1.19.3
+            1.19.4
+          modrinth-id: j2BSsOnY
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+#          curseforge-id: 394468
+#          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
