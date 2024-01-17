@@ -26,7 +26,7 @@ jobs:
           name: artifacts
           path: |
             target/AntiGamemode.jar
-      - uses: Kir-Antipov/mc-publish@v3.2
+      - uses: Kir-Antipov/mc-publish@v3.3
         if: github.ref == 'refs/heads/main'
         with:
           version-type: release
@@ -34,7 +34,7 @@ jobs:
           name: v${{ steps.version.outputs.version }}
           version: ${{ steps.version.outputs.version }}
           github-tag: v${{ steps.version.outputs.version }}
-          files-primary: target/AntiGamemode.jar
+          files: target/AntiGamemode.jar
           java: |
             17
           loaders: |
