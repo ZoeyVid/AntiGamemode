@@ -1,7 +1,9 @@
-name: Anti-Gamemode
-version: '${project.version}'
+name: AntiGamemode
+version: ${project.version}
 main: de.zoeyvid.antigamemode.main
-api-version: 1.19
-authors: [ DavidCraftDev ]
-website: zoeyvid.de
+description: Prevents players from leaving Survival Mode without an OP
+author: ZoeyVid
+authors: [DavidCraftDev, Zoey2936]
+website: https://github.com/ZoeyVid/AntiGamemode
+api-version: '1.17'
 folia-supported: true
