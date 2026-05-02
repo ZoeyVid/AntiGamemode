@@ -5,26 +5,27 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.zoeyvid</groupId>
-    <artifactId>anti-gamemode</artifactId>
+    <artifactId>antigamemode</artifactId>
     <version>0.0.0</version>
     <packaging>jar</packaging>
 
-    <name>Anti Gamemode</name>
+    <name>AntiGamemode</name>
 
     <properties>
         <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <url>zoeyvid.de</url>
 
     <build>
+        <defaultGoal>clean package</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.15.0</version>
                 <configuration>
-                    <release>${java.version}</release>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -37,9 +38,6 @@
                         <goals>
                             <goal>shade</goal>
                         </goals>
-                        <configuration>
-                            <createDependencyReducedPom>false</createDependencyReducedPom>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
@@ -55,7 +53,7 @@
 
     <repositories>
         <repository>
-            <id>papermc</id>
+            <id>papermc-repo</id>
             <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
     </repositories>
