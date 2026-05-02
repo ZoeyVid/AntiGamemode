@@ -43,7 +43,7 @@ jobs:
             paper
             purpur
           game-versions: |
-            >=1.17.0
+            >=1.17
           modrinth-id: j2BSsOnY
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
 #          curseforge-id: 394468
